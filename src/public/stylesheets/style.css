@@ -1,8 +1,302 @@
+html {
+  height: 100vh;
+}
+
 body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  margin: 0px;
+  background-image: url(../images/federica-esposito-Wq_jQF2UIQo-unsplash.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  max-height: 100vh;
+}
+
+main {
+  margin: 8px;
+  display: grid;
+  justify-content: center;
+  padding: 10%;
+}
+
+#mainMobile {
+  display: none;
+}
+
+h1 {
+  font-family: Raleway-ExtraLight;
+  font-weight: 200;
+  font-size: 72px;
+  color: #2e3b4d;
+}
+
+#logo {
+  display: none;
+}
+
+#gradientOverlay {
+  display: none;
+}
+
+#mountainPicDiv {
+  display: none;
+}
+
+#navMenuContainer {
+  margin: 8px;
+  padding: 8px;
+  border-radius: 8px;
+  display: grid;
+  /* grid-template-columns: 1.5fr 0.5fr 1fr; */
+  grid-template-columns: 0.3fr repeat(4, 0.3fr) 1fr 1fr;
+}
+
+#navMenuLogo {
+  display: grid;
+  grid-column: 1/2;
+}
+
+#navMenuLogo > i {
+  padding-top: 8px;
+}
+
+#navMenuHomepageLink {
+  display: grid;
+  grid-column: 2/3;
+}
+
+#navMenuAboutUsLink {
+  display: grid;
+  grid-column: 3/4;
+  min-width: max-content;
+}
+
+#navMenuServicesLink {
+  display: grid;
+  grid-column: 4/5;
+}
+
+#navMenuContactLink {
+  display: grid;
+  grid-column: 5/6;
+}
+
+#emptySpace {
+  display: grid;
+  grid-column: 6/7;
+}
+
+#searchBar {
+  display: grid;
+  grid-column: 7/8;
+}
+
+#searchBarMobile {
+  display: none;
+}
+
+button:hover {
+  background-color: #f8bca9;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+#navMenuLogo:hover {
+  color: #f8bca9;
+  text-decoration: none;
+}
+
+.border-radius-8px {
+  border-radius: 8px;
+}
+/* .col1{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+.col3{
+    display: grid;
+} */
+
+#searchBar {
+  display: grid;
+  grid-template-columns: 0.1fr 0.9fr;
+}
+a,
+i {
+  text-decoration: none;
+  font-family: Raleway-Regular;
+  text-align: center;
+}
+
+i {
+  font-size: 24px;
 }
 
 a {
-  color: #00B7FF;
+  font-size: 20px;
+  line-height: 2;
 }
+
+.margin-0 {
+  margin: 0px;
+}
+
+button {
+  background-color: #2e3b4d;
+  border: solid white 1px;
+  border-radius: 8px 0px 0px 8px;
+}
+
+button > i {
+  margin: 8px;
+  font-size: 16px;
+  color: white;
+}
+
+.width50 {
+  width: 50%;
+}
+
+@font-face {
+  font-family: Raleway-Regular;
+  src: url(../fonts/static/Raleway-Regular.ttf);
+}
+@font-face {
+  font-family: Raleway-ExtraLight;
+  src: url(../fonts/static/Raleway-ExtraLight.ttf);
+}
+
+input {
+  border: solid white 1px;
+  width: 100%;
+  border-radius: 0px 8px 8px 0px;
+}
+
+.padding-LR-8px {
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.width100 {
+  width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    background-image: none;
+    background-color: #2e3b4d;
+    display: grid;
+    height: 100vh;
+  }
+
+  #container {
+    align-content: space-evenly;
+  }
+
+  main {
+    display: none;
+  }
+
+  #mainMobile {
+    margin: 8px;
+    display: grid;
+    justify-content: center;
+    padding-top: 30%;
+  }
+
+  #mainMobile > h1 {
+    color: white;
+    font-size: 36px;
+    margin: 0px;
+    padding: 0px;
+  }
+
+  #logo {
+    display: block;
+    padding-top: 12px;
+  }
+
+  #searchBarMobile {
+    display: grid;
+    justify-content: center;
+    justify-self: center;
+    margin: 12px;
+    width: 80%;
+    height: 20%;
+    grid-template-columns: 1fr 9fr;
+  }
+
+  #mountainPicDiv {
+    background-image: url(../images/federica-esposito-Wq_jQF2UIQo-unsplash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: block;
+    height: 50vh;
+    /* padding-bottom: 50%; */
+  }
+
+  #gradientOverlay {
+    display: grid;
+    background-image: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0) 40%,
+      rgba(46, 59, 77, 1) 100%
+    );
+    min-height: 50vh;
+  }
+
+  #navMenuContainer {
+    margin: 8px;
+    margin-top: 0px;
+    padding: 8px;
+    padding-top: 0px;
+    border-radius: 8px;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  #navMenuLogo {
+    display: none;
+  }
+
+  #searchBar {
+    display: none;
+    grid-row: 1/2;
+    grid-column: 1/2;
+    justify-content: center;
+    margin-bottom: 12px;
+  }
+
+  #navMenuHomepageLink {
+    display: grid;
+    grid-row: 2/3;
+    grid-column: 1/2;
+  }
+
+  #navMenuAboutUsLink {
+    display: grid;
+    grid-row: 3/4;
+    grid-column: 1/2;
+  }
+
+  #navMenuServicesLink {
+    display: grid;
+    grid-row: 4/5;
+    grid-column: 1/2;
+  }
+
+  #navMenuContactLink {
+    display: grid;
+    grid-row: 5/6;
+    grid-column: 1/2;
+  }
+
+  .col3 {
+    grid-template-columns: 1fr;
+  }
+
+  button {
+    width: 100%;
+  }
+}
+
