@@ -16,6 +16,7 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use('/public', express.static(path.join(__dirname, "public")));
 
+//SPECIFYING A ROUTER MIDDLEWARE
 app.use('/', indexRouter);
 app.use('/about', aboutRouter);
 app.use('/services', servicesRouter);

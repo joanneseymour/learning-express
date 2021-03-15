@@ -1,9 +1,10 @@
 var express = require('express');
 var router = express.Router();
 
-
-router.get('', function(req, res, next) {
+var callbackfunction = function(req, res, next) {
   res.sendFile('services.html', { root: "./public/"});
-});
+}
+
+router.get('', callbackfunction);
 
 module.exports = router;
