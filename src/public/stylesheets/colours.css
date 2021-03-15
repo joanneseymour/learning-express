@@ -1,0 +1,56 @@
+.primary-dark-bg{
+    background-color: #2e3b4d;
+}
+
+.primary-dark{
+    color: #2e3b4d;
+}
+
+
+.accent-bg{
+    background-color: #F8BCA9;
+}
+
+.accent{
+    color: #F8BCA9;
+}
+
+.primary-bg{
+    background-color: #58596d;
+}
+
+.primary{
+    color: #58596d;
+}
+
+.secondary-bg{
+    background-color: #8c6464;
+}
+
+.secondary{
+    color: #8c6464;
+}
+
+.white-bg{
+    background-color: white;
+}
+
+.white{
+    color: white;
+}
+
+.black-bg{
+    background-color: #010101;
+}
+
+.black{
+    color: #010101;
+}
+
+.error-bg{
+    background-color: #B00020;
+}
+
+.error{
+    color: #B00020;
+}
