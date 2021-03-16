@@ -7,6 +7,7 @@ var indexRouter = require('./routes/index');
 var aboutRouter = require('./routes/about');
 var servicesRouter = require('./routes/services');
 var contactRouter = require('./routes/contact');
+var buyRouter = require('./routes/buy');
 
 var app = express();
 
@@ -21,5 +22,6 @@ app.use('/', indexRouter);
 app.use('/about', aboutRouter);
 app.use('/services', servicesRouter);
 app.use('/contact', contactRouter);
+app.use('/buy', buyRouter);
 
 module.exports = app;
